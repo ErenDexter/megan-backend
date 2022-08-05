@@ -92,7 +92,7 @@ Use this endpoint to update an existing note in the cloud.
 
 **DELETE** - **Delete a Note** 
 ```
-https://megan-backend.herokuapp.com/notes/v1/update
+https://megan-backend.herokuapp.com/notes/v1
 ```
 Use this endpoint to delete an existing note in the cloud.
 
