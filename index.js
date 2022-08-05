@@ -15,7 +15,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 1234;
 let COMMAND;
 
-// Connecting to the Database
+// Connecting to the database
 
 const db = new sql3.Database("megan.db", sql3.OPEN_READWRITE, (err) => {
   if (err) return console.error(err.message);
