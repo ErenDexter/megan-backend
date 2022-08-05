@@ -40,6 +40,24 @@ Here, you will get the same response as **SignUp**
 ```
 https://megan-backend.herokuapp.com/notes/v1
 ```
+Use this endpoint to get all the existing notes.
+
+**Body**
+
+```
+{
+    "userId": "9fcddea4-c7a3-471c-82b0-b18821d6789a",
+    "token": "9c280e4573bbfb8d4ba267fd7accd14c46d87d9afda0f424ccc2a86ea3b4a38c",
+}
+```
+You will get an array of all of your notes with their corresponding *noteId*.
+
+**POST** - **Add a Note** 
+```
+https://megan-backend.herokuapp.com/notes/v1/add
+```
+Use this endpoint to save a note in the cloud.
+
 **Body**
 
 ```
@@ -49,11 +67,37 @@ https://megan-backend.herokuapp.com/notes/v1
     "note": "I am gonna be the King of the Pirates"
 }
 ```
-Use this endpoint to get all the existing notes.
 
-Add a Note - **POST** - https://megan-backend.herokuapp.com/notes/v1/add
+**POST** - **Update a Note** 
+```
+https://megan-backend.herokuapp.com/notes/v1/update
+```
+Use this endpoint to update an existing note in the cloud.
 
-Update a Note - **POST** - https://megan-backend.herokuapp.com/notes/v1/update
+**Body**
 
-Delete a Note - **DELETE** - https://megan-backend.herokuapp.com/notes/v1
+```
+{
+    "userId": "9fcddea4-c7a3-471c-82b0-b18821d6789a",
+    "token": "9c280e4573bbfb8d4ba267fd7accd14c46d87d9afda0f424ccc2a86ea3b4a38c",
+    "noteId": "1hcddea5-f5h3-471c-82b0-b18821d6789b",
+    "note": "This is the updated text."
+}
+```
+
+**DELETE** - **Delete a Note** 
+```
+https://megan-backend.herokuapp.com/notes/v1/update
+```
+Use this endpoint to delete an existing note in the cloud.
+
+**Body**
+
+```
+{
+    "userId": "9fcddea4-c7a3-471c-82b0-b18821d6789a",
+    "token": "9c280e4573bbfb8d4ba267fd7accd14c46d87d9afda0f424ccc2a86ea3b4a38c",
+    "noteId": "1hcddea5-f5h3-471c-82b0-b18821d6789b",
+}
+```
 
