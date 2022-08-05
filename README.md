@@ -19,6 +19,8 @@ User can create an account using this endpoint.
 ```
 There will be an *userId* and an Authentication *token* in response. You have to send this *token* in the body of each requests to perform an authenticated action like Adding or Deleting notes.
 
+
+
 **POST** - **SignIn**
 ```
 https://megan-backend.herokuapp.com/notes/v1/signIn
@@ -32,7 +34,9 @@ After creating an account user can log in using this endpoint.
     "password": "gomugomu"
 }
 ```
-Here, you will get the same response as **SignUp**
+Here, you will get the same response as **SignUp**.
+
+
 
 ### Notes Management
 
@@ -42,7 +46,7 @@ https://megan-backend.herokuapp.com/notes/v1
 ```
 Use this endpoint to get all the existing notes.
 
-**Body**
+**Query**
 
 ```
 {
@@ -51,6 +55,7 @@ Use this endpoint to get all the existing notes.
 }
 ```
 You will get an array of all of your notes with their corresponding *noteId*.
+
 
 **POST** - **Add a Note** 
 ```
@@ -68,6 +73,7 @@ Use this endpoint to save a note in the cloud.
 }
 ```
 
+
 **POST** - **Update a Note** 
 ```
 https://megan-backend.herokuapp.com/notes/v1/update
@@ -84,6 +90,7 @@ Use this endpoint to update an existing note in the cloud.
     "note": "This is the updated text."
 }
 ```
+
 
 **DELETE** - **Delete a Note** 
 ```
