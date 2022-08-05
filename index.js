@@ -1,5 +1,4 @@
 const sql3 = require("sqlite3").verbose();
-const e = require("express");
 const express = require("express");
 const md5 = require("md5");
 const app = express();
