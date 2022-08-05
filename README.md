@@ -20,7 +20,6 @@ User can create an account using this endpoint.
 There will be an *userId* and an Authentication *token* in response. You have to send this *token* in the body of each requests to perform an authenticated action like Adding or Deleting notes.
 
 
-
 **POST** - **SignIn**
 ```
 https://megan-backend.herokuapp.com/notes/v1/signIn
@@ -35,7 +34,6 @@ After creating an account user can log in using this endpoint.
 }
 ```
 Here, you will get the same response as **SignUp**.
-
 
 
 ### Notes Management
